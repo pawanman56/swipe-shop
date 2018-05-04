@@ -1,0 +1,108 @@
+body {
+	height: auto !important;
+}
+
+
+/*----- Animation preset -----*/
+@keyframes like {
+  from {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  to {
+    transform: rotate(40deg) translateY(-80px);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes like {
+  from {
+    -webkit-transform: rotate(0deg);
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: rotate(40deg) translateY(-80px);
+    opacity: 0;
+  }
+}
+
+@keyframes meh {
+  from {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  to {
+    transform: rotate(-40deg) translateY(-80px);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes meh {
+  from {
+    -webkit-transform: rotate(0deg);
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: rotate(-40deg) translateY(-80px);
+    opacity: 0;
+  }
+}
+
+
+
+/*---- Navigation ----*/
+.search,
+.search-btn {
+	border-radius: 0 !important;
+	margin: 0 !important;
+}
+
+.search-btn > i {
+	margin: 0 !important;
+}
+
+/*----- Main container -----*/
+.main.container {
+	margin-top: 6em;
+	margin-bottom: 2.8em;
+}
+
+ul.card-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+ul.card-list > li.card-lists {
+	display: none;
+}
+
+ul.card-list > li.card-lists.current {
+	display: block;
+}
+
+ul.card-list > li.card-lists > img {
+	display: block;
+	width: 100%;
+	height: auto;
+	border-radius: inherit;
+}
+
+.blurring.dimmable.image .like .card-lists {
+  -webkit-animation: like 0.7s ease-out;
+  animation: like 0.7s ease-out;
+}
+
+.blurring.dimmable.image .meh .card-lists {
+  -webkit-animation: meh 0.7s ease-out;
+  animation: meh 0.7s ease-out;
+}
+
+
+
+/*----- Footer -----*/
+.ui.footer.inverted.segment.sticky {
+	width: 100%;
+	bottom: 0;
+	margin: 0;
+}
